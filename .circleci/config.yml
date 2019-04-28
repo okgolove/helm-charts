@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: okgolove/helm-testing
+    steps:
+      - checkout
+
+      - run:
+          name: Charts test
+          environment:
+            - GITHUB_PAGES_REPO: okgolove/helm-charts
+          command: /usr/local/bin/helm-testing.sh ct
+  build:
+    docker:
+      - image: okgolove/helm-testing
+        auth:
+          username: $DOCKER_LOGIN
+          password: $DOCKER_PASS
+    steps:
+      - checkout
+
+      - run:
+          name: Build and publish
+          environment:
+            - GITHUB_PAGES_REPO: okgolove/helm-charts
+          command: /usr/local/bin/helm-testing.sh build
+
+workflows:
+  version: 2
+  test-build:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: gh-pages
+      - build:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+
