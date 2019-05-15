@@ -1,0 +1,14 @@
+appVersion: "1.5.0"
+description: Asprom provides aerospike metrics for prometheus
+name: asprom
+version: 1.0.0
+home: https://github.com/alicebob/asprom
+sources:
+  - https://github.com/alicebob/asprom
+keywords:
+  - aerospike
+  - prometheus
+  - exporter
+maintainers:
+  - email: okgolove@markeloff.net
+    name: okgolove
