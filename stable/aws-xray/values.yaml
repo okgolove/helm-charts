@@ -21,6 +21,8 @@ xray:
   region:
   # Change the log level, from most verbose to least: dev, debug, info, warn, error, prod (default).
   loglevel: prod
+  # ARN of IAM role to assume
+  roleArn:
 
 service:
   port: 2000
