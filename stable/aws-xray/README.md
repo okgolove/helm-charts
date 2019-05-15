@@ -57,7 +57,8 @@ The following table lists the configurable parameters of the AWS X-Ray chart and
 | `nodeSelector`                       | Node labels for pod assignment              | `{}`                                                       |
 | `tolerations`                        | List of node taints to tolerate             | `[]`                                                       |
 | `affinity`                           | Map of node/pod affinities                  | `{}`                                                       |
-| `resources`                          | CPU/Memory resource requests/limits         | `{}`
+| `resources`                          | CPU/Memory resource requests/limits         | `{}`                                                       |
+
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```console
