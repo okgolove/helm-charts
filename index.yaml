@@ -2,7 +2,26 @@ apiVersion: v1
 entries:
   aws-xray:
   - appVersion: 3.0.0
-    created: 2019-04-28T21:33:08.284814794Z
+    created: 2019-05-15T10:56:16.335588233Z
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
+    digest: 0aaa5d38e94e4fa9ac137d2727f17bca6e1e553953d0871ce58531fb8cd0562a
+    home: https://aws.amazon.com/xray/
+    keywords:
+    - aws
+    - tracing
+    - xray
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    name: aws-xray
+    sources:
+    - https://github.com/aws/aws-xray-daemon
+    urls:
+    - aws-xray/aws-xray-1.0.1.tgz
+    version: 1.0.1
+  - appVersion: 3.0.0
+    created: 2019-05-15T10:56:16.335049163Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 41f7087265c30da51f4ec93aded6d8b76e694f5d168fbb6f8325a7d5dd9101f5
@@ -20,4 +39,4 @@ entries:
     urls:
     - aws-xray/aws-xray-1.0.0.tgz
     version: 1.0.0
-generated: 2019-04-28T21:33:08.284107606Z
+generated: 2019-05-15T10:56:16.334317183Z
