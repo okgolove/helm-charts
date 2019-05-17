@@ -1,0 +1,14 @@
+appVersion: "1.0.0"
+description: Kuttle is a wrapper for sshuttle (VPN over SSH)
+name: kuttle
+version: 1.0.0
+home: https://github.com/kayrus/kuttle
+sources:
+  - https://github.com/kayrus/kuttle
+keywords:
+  - vpn
+  - ssh
+  - sshuttle
+maintainers:
+  - email: okgolove@markeloff.net
+    name: okgolove
