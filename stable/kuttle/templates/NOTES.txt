@@ -1,0 +1,6 @@
+1. You can run sshuttle using a command:
+(export KUTTLE_POD=$(kubectl get pod -n {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "kuttle.name" . }}" -o jsonpath='{.items[0].metadata.name}') ; sshuttle -r "--namespace {{ .Release.Namespace }} $KUTTLE_POD" -e kuttle 0.0.0.0/0)
+
+Don't forget to install:
+sshuttle: https://github.com/sshuttle/sshuttle
+kuttle: https://github.com/kayrus/kuttle
