@@ -1,4 +1,4 @@
-# aws-xray
+# asprom
 
 [asprom](https://github.com/alicebob/asprom) provides [Aerospike](https://www.aerospike.com/) metrics for [Prometheus](https://prometheus.io/).
 
