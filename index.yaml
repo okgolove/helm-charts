@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   asprom:
   - appVersion: 1.6.1
-    created: 2019-05-20T11:38:09.586584501Z
+    created: 2019-06-20T09:34:13.074487856Z
     description: Asprom provides aerospike metrics for prometheus
-    digest: 957b516361af4a7d0cc89797359f9a493d085d402971e9b38d5927fe7f59fa44
+    digest: 470325d6a28cda2dc2dbfc102667a5305bbb989cb84b8ab14deab3cd561e090a
     home: https://github.com/alicebob/asprom
     keywords:
     - aerospike
@@ -20,7 +20,7 @@ entries:
     - asprom/asprom-1.1.0.tgz
     version: 1.1.0
   - appVersion: 1.5.0
-    created: 2019-05-20T11:38:09.586251995Z
+    created: 2019-06-20T09:34:13.074037304Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 3ee1b12b5066989efc4b506b73c3d86f5ef9bdb03ffe87b3376a120548c81497
     home: https://github.com/alicebob/asprom
@@ -38,8 +38,27 @@ entries:
     - asprom/asprom-1.0.0.tgz
     version: 1.0.0
   aws-xray:
+  - appVersion: 3.0.2
+    created: 2019-06-20T09:34:13.076027257Z
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
+    digest: 6b61fd974ad4109ca19f941b2f6d761f602194d693d1116201201fd130d86363
+    home: https://aws.amazon.com/xray/
+    keywords:
+    - aws
+    - tracing
+    - xray
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    name: aws-xray
+    sources:
+    - https://github.com/aws/aws-xray-daemon
+    urls:
+    - aws-xray/aws-xray-1.1.0.tgz
+    version: 1.1.0
   - appVersion: 3.0.0
-    created: 2019-05-20T11:38:09.58730594Z
+    created: 2019-06-20T09:34:13.075499584Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 74555b0b3db6329868f9469b5deeb748f25d4a9fd293c66552a6380e83dc1825
@@ -58,7 +77,7 @@ entries:
     - aws-xray/aws-xray-1.0.1.tgz
     version: 1.0.1
   - appVersion: 3.0.0
-    created: 2019-05-20T11:38:09.586961843Z
+    created: 2019-06-20T09:34:13.074992472Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 41f7087265c30da51f4ec93aded6d8b76e694f5d168fbb6f8325a7d5dd9101f5
@@ -78,9 +97,9 @@ entries:
     version: 1.0.0
   kuttle:
   - appVersion: 1.0.0
-    created: 2019-05-20T11:38:09.587578733Z
+    created: 2019-06-20T09:34:13.076446054Z
     description: Kuttle is a wrapper for sshuttle (VPN over SSH)
-    digest: a8d6cc7364537501e5040d5f675f54b30bd062f9b05c61aebeb3543e2f417bf3
+    digest: c9852396a211be797ae5cd340c6ebb20e79e60e029544b9af4a39fc1340cb1e9
     home: https://github.com/kayrus/kuttle
     keywords:
     - vpn
@@ -95,4 +114,4 @@ entries:
     urls:
     - kuttle/kuttle-1.0.0.tgz
     version: 1.0.0
-generated: 2019-05-20T11:38:09.585733017Z
+generated: 2019-06-20T09:34:13.073335373Z
