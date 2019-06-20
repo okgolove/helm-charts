@@ -1,6 +1,6 @@
 name: aws-xray
-version: 1.0.1
-appVersion: "3.0.0"
+version: 1.1.0
+appVersion: "3.0.2"
 description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
 home: https://aws.amazon.com/xray/
 sources:
