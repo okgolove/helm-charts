@@ -1,7 +1,7 @@
-appVersion: "1.6.1"
+appVersion: "1.7.0"
 description: Asprom provides aerospike metrics for prometheus
 name: asprom
-version: 1.1.0
+version: 1.2.0
 home: https://github.com/alicebob/asprom
 sources:
   - https://github.com/alicebob/asprom
