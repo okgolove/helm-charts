@@ -48,7 +48,7 @@ The following table lists the configurable parameters of the asprom chart and th
 | Parameter                            | Description                                                 | Default                                                    |
 | ------------------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------- |
 | `image.repository`                   | asprom image                                                | `okgolove/asprom`                                          |
-| `image.tag`                          | asprom image tag                                            | `1.9.1`                                                    |
+| `image.tag`                          | asprom image tag                                            | `1.10.0`                                                    |
 | `pullPolicy`                         | Image pull policy                                           | `IfNotPresent`                                             |
 | `aerpospike.host`                    | Aerospike service host                                      | `aerospike`                                                |
 | `aerpospike.port`                    | Aerospike service port                                      | `3000`                                                     |
