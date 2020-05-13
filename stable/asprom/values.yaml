@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: okgolove/asprom
-  tag: 1.9.1
+  tag: 1.10.0
   pullPolicy: Always
   ## Optionally specify an array of imagePullSecrets.
   ## Secrets must be manually created in the namespace.
