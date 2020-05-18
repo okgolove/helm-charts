@@ -19,8 +19,10 @@ spec:
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       serviceAccountName: {{ template "aws-xray.serviceAccountName" . }}
+      {{- if .Values.image.pullSecrets }}
       imagePullSecrets:
         - name: {{ .Values.image.pullSecrets }}
+      {{- end }}
       volumes:
       - name: config-volume
         configMap:
