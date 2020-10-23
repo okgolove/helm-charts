@@ -14,7 +14,7 @@ This chart bootstraps a [AWS X-Ray](https://aws.amazon.com/xray/) deployment on 
 
 ## Prerequisites
 
-- Kubernetes 1.4+ with Beta APIs enabled
+- Kubernetes 1.9+
 
 ## Installing the Chart
 
