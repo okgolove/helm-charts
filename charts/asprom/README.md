@@ -16,7 +16,7 @@ This chart bootstraps an [asprom](https://github.com/alicebob/asprom) deployment
 
 ## Prerequisites
 
-- Kubernetes 1.4+ with Beta APIs enabled
+- Kubernetes 1.9+ with Beta APIs enabled
 
 ## Installing the Chart
 

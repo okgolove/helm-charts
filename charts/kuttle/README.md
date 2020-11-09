@@ -16,7 +16,7 @@ This chart bootstraps a deployment for [kuttle](https://github.com/kayrus/kuttle
 
 ## Prerequisites
 
-- Kubernetes 1.4+ with Beta APIs enabled
+- Kubernetes 1.9+ with Beta APIs enabled
 
 ## Installing the Chart
 
