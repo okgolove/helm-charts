@@ -14,7 +14,7 @@ This chart bootstraps a [Goldpinger](https://github.com/bloomberg/goldpinger) de
 
 ## Prerequisites
 
-- Kubernetes 1.4+ with Beta APIs enabled
+- Kubernetes 1.9+ with Beta APIs enabled
 
 ## Installing the Chart
 

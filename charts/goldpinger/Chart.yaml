@@ -1,13 +1,13 @@
 apiVersion: v1
-name: goldpinger
-version: 2.0.2
-appVersion: 2.0.0
+appVersion: 2.0.1
 description: Goldpinger makes calls between its instances for visibility and alerting.
 home: https://github.com/bloomberg/goldpinger
+maintainers:
+  - email: okgolove@markeloff.net
+    name: okgolove
+  - email: vjkropotko@gmail.com
+    name: s-vkropotko
+name: goldpinger
 sources:
   - https://github.com/bloomberg/goldpinger
-maintainers:
-  - name: okgolove
-    email: okgolove@markeloff.net
-  - name: s-vkropotko
-    email: vjkropotko@gmail.com
+version: 2.0.2
