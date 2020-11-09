@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   asprom:
   - appVersion: 1.10.1
-    created: 2020-10-23T05:20:27.458798999Z
+    created: 2020-11-09T13:29:11.658192221Z
     description: Asprom provides aerospike metrics for prometheus
-    digest: 3f144d37eea4aed8f8475af6669ba62c9d96cb1bb2e738acfc5de7d782ef38cd
+    digest: 02fe9b33e2d7954feaa64ae56d94be6d231ffb421637e568ce37dc47e4fd427f
     home: https://github.com/alicebob/asprom
     keywords:
     - aerospike
@@ -20,7 +20,7 @@ entries:
     - asprom/asprom-1.6.0.tgz
     version: 1.6.0
   - appVersion: 1.10.0
-    created: 2020-10-23T05:20:27.458493084Z
+    created: 2020-11-09T13:29:11.657886386Z
     description: Asprom provides aerospike metrics for prometheus
     digest: f2ec7da4cf232929ab2f47f6a2b6dc7d960c7ef7e40be114205e780fc5fa7b00
     home: https://github.com/alicebob/asprom
@@ -38,7 +38,7 @@ entries:
     - asprom/asprom-1.5.0.tgz
     version: 1.5.0
   - appVersion: 1.9.1
-    created: 2020-10-23T05:20:27.458182918Z
+    created: 2020-11-09T13:29:11.657585647Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 26ed81c84d271fdf56c70c927121372e511adc6e2bbeaea06ff80b1fa90bce16
     home: https://github.com/alicebob/asprom
@@ -56,7 +56,7 @@ entries:
     - asprom/asprom-1.4.0.tgz
     version: 1.4.0
   - appVersion: 1.9.0
-    created: 2020-10-23T05:20:27.45786861Z
+    created: 2020-11-09T13:29:11.657280657Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 8bfbed2c80a7700dc669ed3b67af23a93a05de445f4c96fbdbeaf74d56f2b7d2
     home: https://github.com/alicebob/asprom
@@ -74,7 +74,7 @@ entries:
     - asprom/asprom-1.3.0.tgz
     version: 1.3.0
   - appVersion: 1.7.0
-    created: 2020-10-23T05:20:27.457575748Z
+    created: 2020-11-09T13:29:11.657011846Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 5fd43045d420a273f78e21152afbed981444b168b55ac938274124dfe31a5d80
     home: https://github.com/alicebob/asprom
@@ -92,7 +92,7 @@ entries:
     - asprom/asprom-1.2.0.tgz
     version: 1.2.0
   - appVersion: 1.6.1
-    created: 2020-10-23T05:20:27.457281691Z
+    created: 2020-11-09T13:29:11.656681226Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 10fcb722644a43d94a90040cb7f30f1d85408c8c418b2c8bd36df85927d541d2
     home: https://github.com/alicebob/asprom
@@ -110,7 +110,7 @@ entries:
     - asprom/asprom-1.1.0.tgz
     version: 1.1.0
   - appVersion: 1.5.0
-    created: 2020-10-23T05:20:27.456881722Z
+    created: 2020-11-09T13:29:11.656395915Z
     description: Asprom provides aerospike metrics for prometheus
     digest: 3ee1b12b5066989efc4b506b73c3d86f5ef9bdb03ffe87b3376a120548c81497
     home: https://github.com/alicebob/asprom
@@ -129,10 +129,10 @@ entries:
     version: 1.0.0
   aws-xray:
   - appVersion: 3.2.0
-    created: 2020-10-23T05:20:27.462011685Z
+    created: 2020-11-09T13:29:11.661223931Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
-    digest: e0538cdf860cdf57ce2bfa97ad53ca43aeab671db978932a1e41328f4acf163b
+    digest: f75dea2d7b2375535fbad670e75604488661589baf1490460464a925c724da1a
     home: https://aws.amazon.com/xray/
     keywords:
     - aws
@@ -148,7 +148,7 @@ entries:
     - aws-xray/aws-xray-2.0.0.tgz
     version: 2.0.0
   - appVersion: 3.2.0
-    created: 2020-10-23T05:20:27.461691205Z
+    created: 2020-11-09T13:29:11.660925539Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 354ff28c6b16ae8a55f49bcb574d1fba0554fcfb5a928783b878c92981f666ce
@@ -167,7 +167,7 @@ entries:
     - aws-xray/aws-xray-1.3.1.tgz
     version: 1.3.1
   - appVersion: 3.2.0
-    created: 2020-10-23T05:20:27.461373992Z
+    created: 2020-11-09T13:29:11.660622472Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: e6f267e0e113de14c4450779778088188413ed75dc85cc84e6ae7e2cb88ceae3
@@ -186,7 +186,7 @@ entries:
     - aws-xray/aws-xray-1.3.0.tgz
     version: 1.3.0
   - appVersion: 3.1.0
-    created: 2020-10-23T05:20:27.4610358Z
+    created: 2020-11-09T13:29:11.660292321Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: d8a48803e2b493509aa4514de0224768be68b8e5528154965add3f1e73ad6716
@@ -205,7 +205,7 @@ entries:
     - aws-xray/aws-xray-1.2.0.tgz
     version: 1.2.0
   - appVersion: 3.0.2
-    created: 2020-10-23T05:20:27.460705915Z
+    created: 2020-11-09T13:29:11.659980108Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 6b61fd974ad4109ca19f941b2f6d761f602194d693d1116201201fd130d86363
@@ -224,7 +224,7 @@ entries:
     - aws-xray/aws-xray-1.1.0.tgz
     version: 1.1.0
   - appVersion: 3.0.0
-    created: 2020-10-23T05:20:27.460386669Z
+    created: 2020-11-09T13:29:11.659643345Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 74555b0b3db6329868f9469b5deeb748f25d4a9fd293c66552a6380e83dc1825
@@ -243,7 +243,7 @@ entries:
     - aws-xray/aws-xray-1.0.1.tgz
     version: 1.0.1
   - appVersion: 3.0.0
-    created: 2020-10-23T05:20:27.46002902Z
+    created: 2020-11-09T13:29:11.658542371Z
     description: AWS X-Ray helps you debug and analyze your microservices applications
       with request tracing
     digest: 41f7087265c30da51f4ec93aded6d8b76e694f5d168fbb6f8325a7d5dd9101f5
@@ -261,11 +261,29 @@ entries:
     urls:
     - aws-xray/aws-xray-1.0.0.tgz
     version: 1.0.0
+  goldpinger:
+  - apiVersion: v1
+    appVersion: 2.0.0
+    created: 2020-11-09T13:29:11.661632446Z
+    description: Goldpinger makes calls between its instances for visibility and alerting.
+    digest: df472aef38c6ebe54fda8053013792fa658fd5cd0bfd305c7ddfdb5fed7b965d
+    home: https://github.com/bloomberg/goldpinger
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    - email: vjkropotko@gmail.com
+      name: s-vkropotko
+    name: goldpinger
+    sources:
+    - https://github.com/bloomberg/goldpinger
+    urls:
+    - goldpinger/goldpinger-2.0.2.tgz
+    version: 2.0.2
   kuttle:
   - appVersion: 1.0.0
-    created: 2020-10-23T05:20:27.462263112Z
+    created: 2020-11-09T13:29:11.661898265Z
     description: Kuttle is a wrapper for sshuttle (VPN over SSH)
-    digest: f998730dd6bef2360e1acd6e2e889f24096696ea292cb03276cf354de667aaa0
+    digest: 9c6a7257db3255ddf652eee50144db658b34933a427cb682f1dcde1a35a0b64c
     home: https://github.com/kayrus/kuttle
     keywords:
     - vpn
@@ -280,4 +298,4 @@ entries:
     urls:
     - kuttle/kuttle-1.0.0.tgz
     version: 1.0.0
-generated: 2020-10-23T05:20:27.45631855Z
+generated: 2020-11-09T13:29:11.65598505Z
