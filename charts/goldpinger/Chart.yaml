@@ -10,4 +10,4 @@ maintainers:
 name: goldpinger
 sources:
   - https://github.com/bloomberg/goldpinger
-version: 2.0.2
+version: 2.0.3

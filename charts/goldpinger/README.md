@@ -55,13 +55,16 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | `service.type`                 | Kubernetes service type                      | `LoadBalancer`         |
 | `service.port`                 | Service HTTP port                            | `80`                   |
 | `service.annotations`          | Service annotations                          | `{}`                   |
+| `service.labels`               | Additional service labels                    | `{}`                   |
 | `ingress.enabled`              | Enable ingress controller resource           | `false`                |
 | `ingress.annotations`          | Ingress annotations                          | `{}`                   |
+| `ingress.labels`               | Additional ingress labels                    | `{}`                   |
 | `ingress.path`                 | Ingress path                                 | `/`                    |
 | `ingress.hosts`                | URLs to address your Goldpinger installation | `goldpinger.local`     |
 | `ingress.tls`                  | Ingress TLS configuration                    | `[]`                   |
 | `priorityClassName`            | Set a priorityClassName for pod              | ``                     |
 | `podAnnotations`               | Pod annotations                              | `{}`                   |
+| `podLabels`                    | Additional pod labels                        | `{}`                   |
 | `nodeSelector`                 | Node labels for pod assignment               | `{}`                   |
 | `tolerations`                  | List of node taints to tolerate              | `[]`                   |
 | `affinity`                     | Map of node/pod affinities                   | `{}`                   |
