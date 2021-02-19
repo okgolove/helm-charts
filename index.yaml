@@ -149,6 +149,25 @@ entries:
   aws-xray:
   - apiVersion: v1
     appVersion: 3.2.0
+    created: "2021-02-19T07:47:53.646236031Z"
+    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    digest: a571d3f862451a84d72a3c5ef278296982c843be4fc01b8fe8bea604b4fd7813
+    home: https://aws.amazon.com/xray/
+    keywords:
+    - aws
+    - tracing
+    - xray
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    name: aws-xray
+    sources:
+    - https://github.com/aws/aws-xray-daemon
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/aws-xray-2.0.2/aws-xray-2.0.2.tgz
+    version: 2.0.2
+  - apiVersion: v1
+    appVersion: 3.2.0
     created: "2020-11-09T16:30:34.291294304Z"
     description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
     digest: d80c0e54062f8a0eaa81d94d251191c42e29b8baa80665872dde3265f5c70d27
@@ -293,6 +312,24 @@ entries:
     - aws-xray/aws-xray-1.0.0.tgz
     version: 1.0.0
   goldpinger:
+  - apiVersion: v1
+    appVersion: 3.0.0
+    created: "2021-02-19T07:47:53.746970105Z"
+    description: Goldpinger makes calls between its instances for visibility and alerting.
+    digest: c4ebf8214fde4d42d74b168ac4160fafca83f291282f3e41b279b7e5823fed1c
+    home: https://github.com/bloomberg/goldpinger
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    - email: vjkropotko@gmail.com
+      name: s-vkropotko
+    name: goldpinger
+    sources:
+    - https://github.com/bloomberg/goldpinger
+    - https://github.com/okgolove/helm-charts
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/goldpinger-3.0.1/goldpinger-3.0.1.tgz
+    version: 3.0.1
   - apiVersion: v1
     appVersion: 3.0.0
     created: "2021-01-31T17:00:57.926965672Z"
