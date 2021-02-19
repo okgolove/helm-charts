@@ -5,7 +5,9 @@
 ## TL;DR;
 
 ```console
-$ helm install stable/aws-xray
+## Add the okgolove Helm repository
+$ helm repo add okgolove https://okgolove.github.io/helm-charts/
+$ helm install okgolove/aws-xray
 ```
 
 ## Introduction

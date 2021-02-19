@@ -5,7 +5,9 @@
 ## TL;DR;
 
 ```console
-$ helm install stable/goldpinger
+## Add the okgolove Helm repository
+$ helm repo add okgolove https://okgolove.github.io/helm-charts/
+$ helm install okgolove/goldpinger
 ```
 
 ## Introduction
