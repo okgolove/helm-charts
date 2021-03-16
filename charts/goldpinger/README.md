@@ -76,7 +76,7 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | `serviceMonitor.enabled`       | Set this to `true` to create ServiceMonitor for Prometheus operator | `false` |
 | `serviceMonitor.additionalLabels` | Additional labels that can be used so ServiceMonitor will be discovered by Prometheus | `{}` |
 | `serviceMonitor.honorLabels` | honorLabels chooses the metric's labels on collisions with target labels. | `false`|
-| `serviceMonitor.namespace` | namespace where servicemonitor resource should be created | `monitoring` |
+| `serviceMonitor.namespace` | namespace where servicemonitor resource should be created, same as Goldpinger if not specified | `` |
 | `serviceMonitor.scrapeInterval` | interval between Prometheus scraping | `30s` |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
