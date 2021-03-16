@@ -88,6 +88,6 @@ serviceMonitor:
   enabled: false
   selector:
     prometheus: "kube-prometheus"
-  namespace: "monitoring"
+  namespace:
   interval: 30s
   # honorLabels: true
