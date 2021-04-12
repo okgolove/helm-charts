@@ -12,4 +12,4 @@ maintainers:
 name: aws-xray
 sources:
   - https://github.com/aws/aws-xray-daemon
-version: 2.0.2
+version: 2.0.3
