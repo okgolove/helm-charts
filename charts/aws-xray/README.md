@@ -47,7 +47,7 @@ The following table lists the configurable parameters of the AWS X-Ray chart and
 | Parameter                            | Description                                 | Default                                                    |
 | -------------------------------      | -------------------------------             | ---------------------------------------------------------- |
 | `image.repository`                   | aws-xray image                              | `public.ecr.aws/xray/aws-xray-daemon`                                        |
-| `image.tag`                          | aws-xray image tag                          | `3.3.1`                                                    |
+| `image.tag`                          | aws-xray image tag                          | `3.3.2`                                                    |
 | `pullPolicy`                         | Image pull policy                           | `IfNotPresent`                                             |
 | `rbac.create`                        | Install required rbac clusterrole           | `true`                                                     |
 | `serviceAccount.create`              | Enable ServiceAccount creation              | `true`                                                     |
