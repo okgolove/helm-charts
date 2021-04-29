@@ -32,7 +32,7 @@ spec:
       - name: xray-daemon
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        command: [ "/usr/bin/xray", "-c", "/aws/xray/config.yaml" ]
+        command: [ "/xray", "-c", "/aws/xray/config.yaml" ]
         ports:
         - name: xray-ingest
           containerPort: 2000
