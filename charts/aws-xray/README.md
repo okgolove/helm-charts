@@ -55,7 +55,7 @@ The following table lists the configurable parameters of the AWS X-Ray chart and
 | `xray.region`                        | AWS region you deploy AWS X-Ray to          | ``                                                         |
 | `xray.loglevel`                      | AWS X-Ray daemon log level                  | `prod`                                                     |
 | `xray.roleArn`                       | AWS IAM role to assume                      | ``                                                         |
-| `service.port`                       | Service UDP port                            | `2000`                                                     |
+| `service.port`                       | Service UDP and TCP port                    | `2000`                                                     |
 | `nodeSelector`                       | Node labels for pod assignment              | `{}`                                                       |
 | `tolerations`                        | List of node taints to tolerate             | `[]`                                                       |
 | `affinity`                           | Map of node/pod affinities                  | `{}`                                                       |

@@ -12,7 +12,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       protocol: UDP
-      name: xray-ingest
+      name: incoming
     - port: {{ .Values.service.port }}
       protocol: TCP
       name: xray-tcp
