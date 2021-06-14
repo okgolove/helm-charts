@@ -13,6 +13,9 @@ spec:
     - port: {{ .Values.service.port }}
       protocol: UDP
       name: incoming
+    - port: {{ .Values.service.port }}
+      protocol: TCP
+      name: xray-tcp
   selector:
     app.kubernetes.io/name: {{ include "aws-xray.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
