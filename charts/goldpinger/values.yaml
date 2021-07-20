@@ -62,6 +62,11 @@ podAnnotations: {}
 
 podLabels: {}
 
+updateStrategy: {}
+  # type: RollingUpdate
+  # rollingUpdate:
+  #   maxUnavailable: 1
+
 ## Node labels for pod assignment
 ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
 ##
