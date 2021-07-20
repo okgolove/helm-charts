@@ -67,6 +67,7 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | `priorityClassName`            | Set a priorityClassName for pod              | ``                     |
 | `podAnnotations`               | Pod annotations                              | `{}`                   |
 | `podLabels`                    | Additional pod labels                        | `{}`                   |
+| `updateStrategy`               | Update strategy configuration                | `{}`                   |
 | `nodeSelector`                 | Node labels for pod assignment               | `{}`                   |
 | `tolerations`                  | List of node taints to tolerate              | `[]`                   |
 | `affinity`                     | Map of node/pod affinities                   | `{}`                   |
