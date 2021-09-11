@@ -15,6 +15,13 @@ serviceAccount:
   create: true
   name:
 
+podSecurityContext: {}
+  # fsGroup: 10001
+
+securityContext: {}
+  # User ID for xray user from https://github.com/aws/aws-xray-daemon/blob/master/Dockerfile
+  # fsGroup: 10001
+
 xray:
   # Specify your AWS region
   region:
