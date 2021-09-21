@@ -103,10 +103,13 @@ prometheusRule:
   enabled: false
   rules:
     - alert: goldpinger_nodes_unhealthy
-      expr: sum(goldpinger_nodes_health_total{job={{ template "goldpinger.fullname" . }}, status="unhealthy"})
+      expr: |
+        sum(goldpinger_nodes_health_total{job="{{ template "goldpinger.fullname" . }}", status="unhealthy"})
         BY (instance, goldpinger_instance) > 0
       for: 5m
       annotations:
         description: |
           Goldpinger instance {{ "{{ $labels.goldpinger_instance }}" }} has been reporting unhealthy nodes for at least 5 minutes.
         summary: Instance {{ "{{ $labels.instance }}" }} down
+      labels:
+        severity: warning
