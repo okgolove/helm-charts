@@ -3,10 +3,7 @@ kind: Service
 metadata:
   name: {{ include "goldpinger.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "goldpinger.name" . }}
-    helm.sh/chart: {{ include "goldpinger.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "goldpinger.labels" . | nindent 4 }}
 {{- with .Values.service.labels }}
 {{ toYaml . | indent 4 }}
 {{- end }}
@@ -22,5 +19,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: {{ include "goldpinger.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    {{- include "goldpinger.selectorLabels" . | nindent 4 }}
