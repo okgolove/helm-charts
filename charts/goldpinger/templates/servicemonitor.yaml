@@ -2,15 +2,12 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: {{ template "goldpinger.fullname" . }}
+  name: {{ include "goldpinger.fullname" . }}
   {{- if .Values.serviceMonitor.namespace }}
   namespace: {{ .Values.serviceMonitor.namespace }}
   {{- end }}
   labels:
-    app.kubernetes.io/name: {{ include "goldpinger.name" . }}
-    helm.sh/chart: {{ include "goldpinger.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "goldpinger.labels" . | nindent 4 }}
     {{- range $key, $value := .Values.serviceMonitor.selector }}
     {{ $key }}: {{ $value | quote }}
     {{- end }}
@@ -27,6 +24,5 @@ spec:
       - {{ .Release.Namespace }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ template "goldpinger.name" . }}
-      app.kubernetes.io/instance: {{ .Release.Name }}
+      {{- include "goldpinger.selectorLabels" . | nindent 6 }}
 {{- end -}}

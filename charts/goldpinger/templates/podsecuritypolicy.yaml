@@ -3,12 +3,9 @@
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{ template "goldpinger.fullname" . }}-pod-security-policy
+  name: {{ include "goldpinger.fullname" . }}-pod-security-policy
   labels:
-    app.kubernetes.io/name: {{ include "goldpinger.name" . }}
-    helm.sh/chart: {{ include "goldpinger.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "goldpinger.labels" . | nindent 4 }}
 rules:
 - apiGroups: ["extensions"]
   resources: ["podsecuritypolicies"]
@@ -18,7 +15,7 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{ template "goldpinger.fullname" . }}-pod-security-policy
+  name: {{ include "goldpinger.fullname" . }}-pod-security-policy
   labels:
     app.kubernetes.io/name: {{ include "goldpinger.name" . }}
     helm.sh/chart: {{ include "goldpinger.chart" . }}
@@ -26,10 +23,10 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 roleRef:
   kind: Role
-  name: {{ template "goldpinger.fullname" . }}-pod-security-policy
+  name: {{ include "goldpinger.fullname" . }}-pod-security-policy
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: ServiceAccount
-  name: {{ template "goldpinger.serviceAccountName" . }}
+  name: {{ include "goldpinger.serviceAccountName" . }}
   namespace: {{ .Release.Namespace }}
 {{- end }}
