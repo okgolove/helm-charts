@@ -49,7 +49,8 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | `image.repository`             | Goldpinger image                             | `bloomberg/goldpinger` |
 | `image.tag`                    | Goldpinger image tag                         | `3.2.0`                |
 | `pullPolicy`                   | Image pull policy                            | `IfNotPresent`         |
-| `rbac.create`                  | Install required rbac clusterrole            | `true`                 |
+| `rbac.create`                  | Install required rbac resources              | `true`                 |
+| `rbac.clusterscoped`           | Install optional cluster scoped rbac         | `true`                 |
 | `serviceAccount.create`        | Enable ServiceAccount creation               | `true`                 |
 | `serviceAccount.name`          | ServiceAccount for Goldpinger pods           | `default`              |
 | `goldpinger.port`              | Goldpinger app port listen to                | `80`                   |
