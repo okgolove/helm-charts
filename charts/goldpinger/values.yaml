@@ -14,6 +14,7 @@ image:
 
 rbac:
   create: true
+  clusterscoped: true
 serviceAccount:
   create: true
   name:
