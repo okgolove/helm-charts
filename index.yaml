@@ -446,6 +446,24 @@ entries:
     version: 1.0.0
   goldpinger:
   - apiVersion: v1
+    appVersion: 3.3.0
+    created: "2022-01-15T11:15:25.952999164Z"
+    description: Goldpinger makes calls between its instances for visibility and alerting.
+    digest: 2693f5bd119ac718a1d29ef45c6eae63d114de9dbe2a557f9d06db0ba60cd931
+    home: https://github.com/bloomberg/goldpinger
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    - email: vjkropotko@gmail.com
+      name: s-vkropotko
+    name: goldpinger
+    sources:
+    - https://github.com/bloomberg/goldpinger
+    - https://github.com/okgolove/helm-charts
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/goldpinger-5.1.0/goldpinger-5.1.0.tgz
+    version: 5.1.0
+  - apiVersion: v1
     appVersion: 3.2.0
     created: "2022-01-13T07:31:13.077031965Z"
     description: Goldpinger makes calls between its instances for visibility and alerting.
