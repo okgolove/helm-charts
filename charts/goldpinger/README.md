@@ -23,7 +23,7 @@ This chart bootstraps a [Goldpinger](https://github.com/bloomberg/goldpinger) de
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm install --name my-release stable/goldpinger
+$ helm install --name my-release okgolove/goldpinger
 ```
 
 The command deploys Goldpinger on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
@@ -47,7 +47,7 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | Parameter                      | Description                                  | Default                |
 | ------------------------------ | -------------------------------------------- | ---------------------- |
 | `image.repository`             | Goldpinger image                             | `bloomberg/goldpinger` |
-| `image.tag`                    | Goldpinger image tag                         | `3.2.0`                |
+| `image.tag`                    | Goldpinger image tag                         | `3.3.0`                |
 | `pullPolicy`                   | Image pull policy                            | `IfNotPresent`         |
 | `rbac.create`                  | Install required rbac resources              | `true`                 |
 | `rbac.clusterscoped`           | Install optional cluster scoped rbac         | `true`                 |
