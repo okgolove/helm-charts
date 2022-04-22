@@ -47,7 +47,7 @@ The following table lists the configurable parameters of the Goldpinger chart an
 | Parameter                      | Description                                  | Default                |
 | ------------------------------ | -------------------------------------------- | ---------------------- |
 | `image.repository`             | Goldpinger image                             | `bloomberg/goldpinger` |
-| `image.tag`                    | Goldpinger image tag                         | `3.3.0`                |
+| `image.tag`                    | Goldpinger image tag                         | `3.5.1`                |
 | `pullPolicy`                   | Image pull policy                            | `IfNotPresent`         |
 | `rbac.create`                  | Install required rbac resources              | `true`                 |
 | `rbac.clusterscoped`           | Install optional cluster scoped rbac         | `true`                 |
