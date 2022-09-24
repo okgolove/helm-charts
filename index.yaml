@@ -20,7 +20,8 @@ entries:
     urls:
     - https://github.com/okgolove/helm-charts/releases/download/asprom-2.0.0/asprom-2.0.0.tgz
     version: 2.0.0
-  - appVersion: 1.10.1
+  - apiVersion: v1
+    appVersion: 1.10.1
     created: "2020-11-09T13:29:11.658192221Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 02fe9b33e2d7954feaa64ae56d94be6d231ffb421637e568ce37dc47e4fd427f
@@ -38,7 +39,8 @@ entries:
     urls:
     - asprom/asprom-1.6.0.tgz
     version: 1.6.0
-  - appVersion: 1.10.0
+  - apiVersion: v1
+    appVersion: 1.10.0
     created: "2020-11-09T13:29:11.657886386Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: f2ec7da4cf232929ab2f47f6a2b6dc7d960c7ef7e40be114205e780fc5fa7b00
@@ -56,7 +58,8 @@ entries:
     urls:
     - asprom/asprom-1.5.0.tgz
     version: 1.5.0
-  - appVersion: 1.9.1
+  - apiVersion: v1
+    appVersion: 1.9.1
     created: "2020-11-09T13:29:11.657585647Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 26ed81c84d271fdf56c70c927121372e511adc6e2bbeaea06ff80b1fa90bce16
@@ -74,7 +77,8 @@ entries:
     urls:
     - asprom/asprom-1.4.0.tgz
     version: 1.4.0
-  - appVersion: 1.9.0
+  - apiVersion: v1
+    appVersion: 1.9.0
     created: "2020-11-09T13:29:11.657280657Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 8bfbed2c80a7700dc669ed3b67af23a93a05de445f4c96fbdbeaf74d56f2b7d2
@@ -92,7 +96,8 @@ entries:
     urls:
     - asprom/asprom-1.3.0.tgz
     version: 1.3.0
-  - appVersion: 1.7.0
+  - apiVersion: v1
+    appVersion: 1.7.0
     created: "2020-11-09T13:29:11.657011846Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 5fd43045d420a273f78e21152afbed981444b168b55ac938274124dfe31a5d80
@@ -110,7 +115,8 @@ entries:
     urls:
     - asprom/asprom-1.2.0.tgz
     version: 1.2.0
-  - appVersion: 1.6.1
+  - apiVersion: v1
+    appVersion: 1.6.1
     created: "2020-11-09T13:29:11.656681226Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 10fcb722644a43d94a90040cb7f30f1d85408c8c418b2c8bd36df85927d541d2
@@ -128,7 +134,8 @@ entries:
     urls:
     - asprom/asprom-1.1.0.tgz
     version: 1.1.0
-  - appVersion: 1.5.0
+  - apiVersion: v1
+    appVersion: 1.5.0
     created: "2020-11-09T13:29:11.656395915Z"
     description: Asprom provides aerospike metrics for prometheus
     digest: 3ee1b12b5066989efc4b506b73c3d86f5ef9bdb03ffe87b3376a120548c81497
@@ -149,8 +156,29 @@ entries:
   aws-xray:
   - apiVersion: v1
     appVersion: 3.3.4
+    created: "2022-09-24T12:31:59.345575464Z"
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
+    digest: e14d9241c6ddd68bd92c1f3bb9921e28355fde2189c627584a0aae0ed37655d4
+    home: https://aws.amazon.com/xray/
+    keywords:
+    - aws
+    - tracing
+    - xray
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    name: aws-xray
+    sources:
+    - https://github.com/aws/aws-xray-daemon
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/aws-xray-4.0.0/aws-xray-4.0.0.tgz
+    version: 4.0.0
+  - apiVersion: v1
+    appVersion: 3.3.4
     created: "2022-09-23T16:02:33.796784465Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 44683f800ae734d9d0ae8ce5332053ed87b6e15777e62c43af62156a625679b9
     home: https://aws.amazon.com/xray/
     keywords:
@@ -169,7 +197,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.3
     created: "2021-09-11T10:23:23.708253527Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 1ea4e2f974217681cc4fc3d673bcb84479b4ad69591cd8f7973dfb5bd3a1fce9
     home: https://aws.amazon.com/xray/
     keywords:
@@ -188,7 +217,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.3
     created: "2021-07-28T13:02:10.315679453Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 227765aeb6a0ee299dd241f3882302ac689c0dab7cff0626d22b86852f2cd77b
     home: https://aws.amazon.com/xray/
     keywords:
@@ -207,7 +237,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.2
     created: "2021-06-14T10:48:23.048833458Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 4237b2eb08b8848c0573ef48465ee8ac90343efcbc23828933d0b63c491e3914
     home: https://aws.amazon.com/xray/
     keywords:
@@ -226,7 +257,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.2
     created: "2021-04-29T07:42:28.089697798Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: a19f148b7286c74a7a9b4d35a1c6c9c43f23e582cde847cc2be7fabde520df3c
     home: https://aws.amazon.com/xray/
     keywords:
@@ -245,7 +277,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.2
     created: "2021-04-25T06:23:41.302956954Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 2adc1fab024a810fbd885d69a2ba1c04eed1476084a7fb695196777eda85588a
     home: https://aws.amazon.com/xray/
     keywords:
@@ -264,7 +297,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.3.1
     created: "2021-04-16T10:14:55.250159089Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 5a25cb1444b48f5136e21f0349ea92b1ca7e854be9adecc9609f77f90fdad131
     home: https://aws.amazon.com/xray/
     keywords:
@@ -283,7 +317,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.2.0
     created: "2021-04-12T17:57:37.691858258Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 9c44615af52d0d7d2d132211fb43f87d85ddd528a35bfac3dfcdc8f100d9daf8
     home: https://aws.amazon.com/xray/
     keywords:
@@ -302,7 +337,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.2.0
     created: "2021-02-19T07:47:53.646236031Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: a571d3f862451a84d72a3c5ef278296982c843be4fc01b8fe8bea604b4fd7813
     home: https://aws.amazon.com/xray/
     keywords:
@@ -321,7 +357,8 @@ entries:
   - apiVersion: v1
     appVersion: 3.2.0
     created: "2020-11-09T16:30:34.291294304Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: d80c0e54062f8a0eaa81d94d251191c42e29b8baa80665872dde3265f5c70d27
     home: https://aws.amazon.com/xray/
     keywords:
@@ -337,9 +374,11 @@ entries:
     urls:
     - https://github.com/okgolove/helm-charts/releases/download/aws-xray-2.0.1/aws-xray-2.0.1.tgz
     version: 2.0.1
-  - appVersion: 3.2.0
+  - apiVersion: v1
+    appVersion: 3.2.0
     created: "2020-11-09T13:29:11.661223931Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: f75dea2d7b2375535fbad670e75604488661589baf1490460464a925c724da1a
     home: https://aws.amazon.com/xray/
     keywords:
@@ -355,9 +394,11 @@ entries:
     urls:
     - aws-xray/aws-xray-2.0.0.tgz
     version: 2.0.0
-  - appVersion: 3.2.0
+  - apiVersion: v1
+    appVersion: 3.2.0
     created: "2020-11-09T13:29:11.660925539Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 354ff28c6b16ae8a55f49bcb574d1fba0554fcfb5a928783b878c92981f666ce
     home: https://aws.amazon.com/xray/
     keywords:
@@ -373,9 +414,11 @@ entries:
     urls:
     - aws-xray/aws-xray-1.3.1.tgz
     version: 1.3.1
-  - appVersion: 3.2.0
+  - apiVersion: v1
+    appVersion: 3.2.0
     created: "2020-11-09T13:29:11.660622472Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: e6f267e0e113de14c4450779778088188413ed75dc85cc84e6ae7e2cb88ceae3
     home: https://aws.amazon.com/xray/
     keywords:
@@ -391,9 +434,11 @@ entries:
     urls:
     - aws-xray/aws-xray-1.3.0.tgz
     version: 1.3.0
-  - appVersion: 3.1.0
+  - apiVersion: v1
+    appVersion: 3.1.0
     created: "2020-11-09T13:29:11.660292321Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: d8a48803e2b493509aa4514de0224768be68b8e5528154965add3f1e73ad6716
     home: https://aws.amazon.com/xray/
     keywords:
@@ -409,9 +454,11 @@ entries:
     urls:
     - aws-xray/aws-xray-1.2.0.tgz
     version: 1.2.0
-  - appVersion: 3.0.2
+  - apiVersion: v1
+    appVersion: 3.0.2
     created: "2020-11-09T13:29:11.659980108Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 6b61fd974ad4109ca19f941b2f6d761f602194d693d1116201201fd130d86363
     home: https://aws.amazon.com/xray/
     keywords:
@@ -427,9 +474,11 @@ entries:
     urls:
     - aws-xray/aws-xray-1.1.0.tgz
     version: 1.1.0
-  - appVersion: 3.0.0
+  - apiVersion: v1
+    appVersion: 3.0.0
     created: "2020-11-09T13:29:11.659643345Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 74555b0b3db6329868f9469b5deeb748f25d4a9fd293c66552a6380e83dc1825
     home: https://aws.amazon.com/xray/
     keywords:
@@ -445,9 +494,11 @@ entries:
     urls:
     - aws-xray/aws-xray-1.0.1.tgz
     version: 1.0.1
-  - appVersion: 3.0.0
+  - apiVersion: v1
+    appVersion: 3.0.0
     created: "2020-11-09T13:29:11.658542371Z"
-    description: AWS X-Ray helps you debug and analyze your microservices applications with request tracing
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
     digest: 41f7087265c30da51f4ec93aded6d8b76e694f5d168fbb6f8325a7d5dd9101f5
     home: https://aws.amazon.com/xray/
     keywords:
@@ -770,7 +821,8 @@ entries:
     urls:
     - https://github.com/okgolove/helm-charts/releases/download/kuttle-2.0.0/kuttle-2.0.0.tgz
     version: 2.0.0
-  - appVersion: 1.0.0
+  - apiVersion: v1
+    appVersion: 1.0.0
     created: "2020-11-09T13:29:11.661898265Z"
     description: Kuttle is a wrapper for sshuttle (VPN over SSH)
     digest: 9c6a7257db3255ddf652eee50144db658b34933a427cb682f1dcde1a35a0b64c
@@ -788,4 +840,4 @@ entries:
     urls:
     - kuttle/kuttle-1.0.0.tgz
     version: 1.0.0
-generated: "2020-11-09T13:29:11.65598505Z"
+generated: "2022-09-24T12:31:59.345828064Z"
