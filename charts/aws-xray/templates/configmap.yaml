@@ -3,10 +3,7 @@ kind: ConfigMap
 metadata:
   name: {{ include "aws-xray.fullname" . }}-config
   labels:
-    app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-    helm.sh/chart: {{ include "aws-xray.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "aws-xray.labels" . | nindent 4 }}
 data:
   config.yaml: |-
     # Maximum buffer size in MB (minimum 3). Choose 0 to use 1% of host memory.

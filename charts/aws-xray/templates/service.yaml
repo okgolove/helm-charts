@@ -3,10 +3,7 @@ kind: Service
 metadata:
   name: {{ include "aws-xray.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-    helm.sh/chart: {{ include "aws-xray.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "aws-xray.labels" . | nindent 4 }}
 spec:
   clusterIP: None
   ports:
@@ -17,5 +14,4 @@ spec:
       protocol: TCP
       name: xray-tcp
   selector:
-    app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    {{- include "aws-xray.selectorLabels" . | nindent 4 }}

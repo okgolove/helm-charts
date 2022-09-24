@@ -1,7 +1,6 @@
 #### PR Checklist
 [Place an '[x]' (no spaces) in all applicable fields. Please remove unrelated fields.]
 - [ ] Chart Version bumped
-- [ ] Variables and other changes are documented in the README.md
 
 <!--
 Thank you for contributing to okgolove/helm-charts. Before you submit this PR we'd like to
