@@ -33,37 +33,37 @@ spec:
         {{- end }}
       {{- end }}
       containers:
-      - name: goldpinger-daemon
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
-        env:
-          - name: HOSTNAME
-            valueFrom:
-              fieldRef:
-                fieldPath: spec.nodeName
-          - name: HOST
-            value: "0.0.0.0"
-          - name: PORT
-            value: "{{ .Values.goldpinger.port }}"
-          - name: LABEL_SELECTOR
-            value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
+        - name: goldpinger-daemon
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: HOSTNAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: HOST
+              value: "0.0.0.0"
+            - name: PORT
+              value: "{{ .Values.goldpinger.port }}"
+            - name: LABEL_SELECTOR
+              value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
 {{- if .Values.extraEnv }}
 {{ toYaml .Values.extraEnv | indent 10 }}
 {{- end }}
-        ports:
-        - name: http
-          containerPort: {{ .Values.goldpinger.port }}
-          protocol: TCP
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
-        resources:
-{{ toYaml .Values.resources | indent 12 }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.goldpinger.port }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+  {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
