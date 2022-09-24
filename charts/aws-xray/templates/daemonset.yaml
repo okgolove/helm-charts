@@ -3,63 +3,62 @@ kind: DaemonSet
 metadata:
   name: {{ include "aws-xray.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-    helm.sh/chart: {{ include "aws-xray.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    {{- include "aws-xray.labels" . | nindent 4 }}
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-      app.kubernetes.io/instance: {{ .Release.Name }}
+      {{- include "aws-xray.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      labels:
-        app.kubernetes.io/name: {{ include "aws-xray.name" . }}
-        app.kubernetes.io/instance: {{ .Release.Name }}
-    spec:
-      serviceAccountName: {{ template "aws-xray.serviceAccountName" . }}
-      {{- if .Values.image.pullSecrets }}
-      imagePullSecrets:
-        - name: {{ .Values.image.pullSecrets }}
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
       {{- end }}
+      labels:
+        {{- include "aws-xray.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ template "aws-xray.serviceAccountName" . }}
       volumes:
-      - name: config-volume
-        configMap:
-          name: "{{ include "aws-xray.fullname" . }}-config"
+        - name: config-volume
+          configMap:
+            name: "{{ include "aws-xray.fullname" . }}-config"
       hostNetwork: true
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-      - name: xray-daemon
-        securityContext:
-          {{- toYaml .Values.securityContext | nindent 10 }}
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
-        command: [ "/xray", "-c", "/aws/xray/config.yaml" ]
-        ports:
-        - name: xray-ingest
-          containerPort: 2000
-          hostPort: 2000
-          protocol: UDP
-        - name: xray-tcp
-          containerPort: 2000
-          hostPort: 2000
-          protocol: TCP
-        volumeMounts:
-        - name: config-volume
-          mountPath: /aws/xray
-        resources:
-{{ toYaml .Values.resources | indent 12 }}
-    {{- with .Values.nodeSelector }}
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["/xray", "-c", "/aws/xray/config.yaml"]
+          ports:
+            - name: xray-ingest
+              containerPort: 2000
+              hostPort: 2000
+              protocol: UDP
+            - name: xray-tcp
+              containerPort: 2000
+              hostPort: 2000
+              protocol: TCP
+          volumeMounts:
+            - name: config-volume
+              mountPath: /aws/xray
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
       nodeSelector:
-{{ toYaml . | indent 8 }}
-    {{- end }}
-    {{- with .Values.affinity }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
       affinity:
-{{ toYaml . | indent 8 }}
-    {{- end }}
-    {{- with .Values.tolerations }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
       tolerations:
-{{ toYaml . | indent 8 }}
-    {{- end }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
