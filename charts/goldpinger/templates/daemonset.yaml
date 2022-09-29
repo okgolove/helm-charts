@@ -48,7 +48,7 @@ spec:
             - name: LABEL_SELECTOR
               value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
 {{- if .Values.extraEnv }}
-{{ toYaml .Values.extraEnv | indent 10 }}
+{{ toYaml .Values.extraEnv | indent 12 }}
 {{- end }}
           ports:
             - name: http
