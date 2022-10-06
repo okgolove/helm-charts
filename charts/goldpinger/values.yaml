@@ -109,9 +109,6 @@ podSecurityContext: {}
 #  seccompProfile:
 #    type: RuntimeDefault
 
-
-
-
 serviceMonitor:
   enabled: false
   selector:
