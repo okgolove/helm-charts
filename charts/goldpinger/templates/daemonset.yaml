@@ -47,6 +47,10 @@ spec:
               value: "{{ .Values.goldpinger.port }}"
             - name: LABEL_SELECTOR
               value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
+          {{- with .Values.containerSecurityContext }}
+          securityContext:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
 {{- if .Values.extraEnv }}
 {{ toYaml .Values.extraEnv | indent 12 }}
 {{- end }}
@@ -74,5 +78,9 @@ spec:
       {{- end }}
       {{- with .Values.tolerations }}
       tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.podSecurityContext }}
+      securityContext:
         {{- toYaml . | nindent 8 }}
       {{- end }}
