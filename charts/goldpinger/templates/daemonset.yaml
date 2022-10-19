@@ -47,17 +47,22 @@ spec:
               value: "{{ .Values.goldpinger.port }}"
             - name: LABEL_SELECTOR
               value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
+            {{- if .Values.extraEnv }}
+            {{ toYaml .Values.extraEnv | nindent 12 }}
+            {{- end }}
           {{- with .Values.containerSecurityContext }}
           securityContext:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-{{- if .Values.extraEnv }}
-{{ toYaml .Values.extraEnv | indent 12 }}
-{{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.goldpinger.port }}
               protocol: TCP
+              {{- range $k := .Values.extraEnv }}
+              {{- if and (eq $k.name "USE_HOST_IP") (eq $k.value "true") }}
+              hostPort: {{ $.Values.goldpinger.port }}
+              {{- end }}
+              {{- end }}
           livenessProbe:
             httpGet:
               path: /
@@ -68,6 +73,11 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      {{- range $k := .Values.extraEnv }}
+      {{- if and (eq $k.name "USE_HOST_IP") (eq $k.value "true") }}
+      hostNetwork: true
+      {{- end }}
+      {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
