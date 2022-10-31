@@ -36,6 +36,9 @@ spec:
         - name: goldpinger-daemon
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+            - name: zap
+              mountPath: /config
           env:
             - name: HOSTNAME
               valueFrom:
@@ -73,6 +76,10 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: zap
+          configMap:
+            name: {{ include "goldpinger.fullname" . }}-zap
       {{- range $k := .Values.extraEnv }}
       {{- if and (eq $k.name "USE_HOST_IP") (eq $k.value "true") }}
       hostNetwork: true
