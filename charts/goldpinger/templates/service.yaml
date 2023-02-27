@@ -20,6 +20,7 @@ spec:
       name: http
   selector:
     {{- include "goldpinger.selectorLabels" . | nindent 4 }}
-{{- if $spec.loadBalancerSourceRanges }}
+  {{- if .Values.service.loadBalancerSourceRanges }}
   loadBalancerSourceRanges:
-{{ toYaml $spec.loadBalancerSourceRanges | indent 4 }}
+    {{- toYaml .Values.service.loadBalancerSourceRanges | nindent 4 }}
+  {{- end }}
