@@ -52,6 +52,7 @@ service:
   port: 80
   annotations: {}
   labels: {}
+  loadBalancerSourceRanges: {}
 
 ingress:
   enabled: false
