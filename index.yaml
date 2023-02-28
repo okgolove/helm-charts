@@ -537,6 +537,24 @@ entries:
   goldpinger:
   - apiVersion: v1
     appVersion: v3.7.0
+    created: "2023-02-28T18:11:21.996112326Z"
+    description: Goldpinger makes calls between its instances for visibility and alerting.
+    digest: cbe68728d5b05e319037def954bcf385cce4ab135eac6b10e96ac2a1c6b5a1b6
+    home: https://github.com/bloomberg/goldpinger
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    - email: vjkropotko@gmail.com
+      name: s-vkropotko
+    name: goldpinger
+    sources:
+    - https://github.com/bloomberg/goldpinger
+    - https://github.com/okgolove/helm-charts
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/goldpinger-5.6.0/goldpinger-5.6.0.tgz
+    version: 5.6.0
+  - apiVersion: v1
+    appVersion: v3.7.0
     created: "2022-10-31T19:12:00.848206272Z"
     description: Goldpinger makes calls between its instances for visibility and alerting.
     digest: 8caffdd283bf0a8c3eb4a4e440a650c493b2c7255e19e4a512dd927e901c711c
@@ -986,4 +1004,4 @@ entries:
     urls:
     - kuttle/kuttle-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-18T09:16:34.680213758Z"
+generated: "2023-02-28T18:11:21.996402425Z"
