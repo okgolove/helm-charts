@@ -22,6 +22,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       serviceAccountName: {{ template "aws-xray.serviceAccountName" . }}
+      priorityClassName: {{ .Values.priorityClassName }}
       volumes:
         - name: config-volume
           configMap:
