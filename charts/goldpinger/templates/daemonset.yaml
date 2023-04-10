@@ -50,7 +50,7 @@ spec:
               value: "{{ .Values.goldpinger.port }}"
             - name: LABEL_SELECTOR
               value: "app.kubernetes.io/name={{ include "goldpinger.name" . }}"
-            {{- if .Values.extraEnv }}
+            {{- if .Values.extraEnv -}}
             {{ toYaml .Values.extraEnv | nindent 12 }}
             {{- end }}
           {{- with .Values.containerSecurityContext }}
