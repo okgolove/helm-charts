@@ -155,6 +155,26 @@ entries:
     version: 1.0.0
   aws-xray:
   - apiVersion: v1
+    appVersion: 3.3.7
+    created: "2023-04-28T06:55:52.118178954Z"
+    description: AWS X-Ray helps you debug and analyze your microservices applications
+      with request tracing
+    digest: a82250e5ad0f4099ebe4c9493576aba0c8bb83063995ba371e06f3b6e897d067
+    home: https://aws.amazon.com/xray/
+    keywords:
+    - aws
+    - tracing
+    - xray
+    maintainers:
+    - email: okgolove@markeloff.net
+      name: okgolove
+    name: aws-xray
+    sources:
+    - https://github.com/aws/aws-xray-daemon
+    urls:
+    - https://github.com/okgolove/helm-charts/releases/download/aws-xray-4.0.3/aws-xray-4.0.3.tgz
+    version: 4.0.3
+  - apiVersion: v1
     appVersion: 3.3.6
     created: "2023-04-04T19:57:47.248876698Z"
     description: AWS X-Ray helps you debug and analyze your microservices applications
@@ -1060,4 +1080,4 @@ entries:
     urls:
     - kuttle/kuttle-1.0.0.tgz
     version: 1.0.0
-generated: "2023-04-10T10:37:43.238192055Z"
+generated: "2023-04-28T06:55:52.118570286Z"
