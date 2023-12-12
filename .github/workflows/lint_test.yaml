@@ -9,10 +9,11 @@ jobs:
     strategy:
       matrix:
         kubernetes_version:
-          - "kindest/node:v1.25.0"
-          - "kindest/node:v1.24.4"
-          - "kindest/node:v1.23.10"
-          - "kindest/node:v1.22.1"
+          - "kindest/node:v1.28.0"
+          - "kindest/node:v1.27.3"
+          - "kindest/node:v1.26.6"
+          - "kindest/node:v1.25.11"
+          - "kindest/node:v1.24.15"
       fail-fast: false
 
     steps:
