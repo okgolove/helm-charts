@@ -2,8 +2,15 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: {{ include "goldpinger.fullname" . }}
+  {{- with .Values.daemonsetAnnotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
   labels:
     {{- include "goldpinger.labels" . | nindent 4 }}
+    {{- with .Values.daemonsetLabels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
 spec:
   {{- with .Values.updateStrategy }}
   updateStrategy:
