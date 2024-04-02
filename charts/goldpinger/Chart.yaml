@@ -11,4 +11,4 @@ name: goldpinger
 sources:
   - https://github.com/bloomberg/goldpinger
   - https://github.com/okgolove/helm-charts
-version: 6.1.2
+version: 6.1.3

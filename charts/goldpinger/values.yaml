@@ -85,6 +85,12 @@ resources: {}
   #  cpu: 100m
   #  memory: 128Mi
 
+# Annotations added to the DaemonSet
+daemonsetAnnotations: {}
+
+# Additional labels added to the DaemonSet
+daemonsetLabels: {}
+
 podAnnotations: {}
 
 podLabels: {}
