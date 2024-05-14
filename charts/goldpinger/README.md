@@ -1,3 +1,7 @@
+# DEPRECATED
+
+:warning: This chart is deprecated in favor of official [Goldpinger chart](https://github.com/bloomberg/goldpinger/tree/master/charts/goldpinger) :warning:
+
 # Goldpinger
 
 [Goldpinger](https://github.com/bloomberg/goldpinger) makes calls between its instances for visibility and alerting.
