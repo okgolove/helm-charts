@@ -8,9 +8,11 @@ spec:
   clusterIP: None
   ports:
     - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.xray.containerPort }}
       protocol: UDP
       name: incoming
     - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.xray.containerPort }}
       protocol: TCP
       name: xray-tcp
   selector:
