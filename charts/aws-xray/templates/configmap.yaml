@@ -17,8 +17,8 @@ data:
     Socket:
       # Change the address and port on which the daemon listens for UDP packets containing segment documents.
       # Make sure we listen on all IP's by default for the k8s setup
-      UDPAddress: "0.0.0.0:2000"
-      TCPAddress: "0.0.0.0:2000"
+      UDPAddress: "0.0.0.0:{{ .Values.xray.containerPort }}"
+      TCPAddress: "0.0.0.0:{{ .Values.xray.containerPort }}"
     Logging:
       LogRotation: true
       # Change the log level, from most verbose to least: dev, debug, info, warn, error, prod (default).

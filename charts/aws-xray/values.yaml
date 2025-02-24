@@ -37,6 +37,8 @@ xray:
   loglevel: prod
   # ARN of IAM role to assume
   roleArn:
+  # Port to be used as a hostPort and containerPort on the pod
+  containerPort: 2000
 
 service:
   port: 2000
